@@ -27,5 +27,6 @@ Route::get('users-list', [AdminController::class, 'usersList'])->name('users.lis
 
 Route::resource('restaurent',RestaurentController::class);
 Route::resource('review',ReviewController::class);
+
 Route::get('my-reviews',[ReviewController::class,'myReviews'])->name('my_reviews');
 Route::get('add-review/{id}', [ReviewController::class, 'addReview'])->name('add.review');
