@@ -118,12 +118,10 @@ span{
                         <div class="rating-card">
                             <div class="card-title"><b>{{ Auth::user()->first_name.' '.Auth::user()->last_name}}</b></div>
                         </div>
-                        
                         <div class="content-info">
                             <div class="rating">
                                {{ $item->comment }}
                             </div>
-                            
                         </div>
                     </div>
                 </div>
