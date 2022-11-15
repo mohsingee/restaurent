@@ -38,4 +38,9 @@ class HomeController extends Controller
         $data = Restaurent::with('general')->get();
         return view('home',compact('data'));
     }
+
+    public function showReview($id){
+        $restaurent = Restaurent::whereId($id)->with('services','foods','occasion','meals','general','comment')->first();
+        return view('frontend.pages.reviewDetail',compact('restaurent'));
+    }
 }

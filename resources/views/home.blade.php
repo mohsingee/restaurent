@@ -110,8 +110,8 @@ span{
                 <div class="title">
                     <h4>{{ $item->name }}</h4>
                 </div>
-                <button class="cancel text-right"><a href="{{ route('review.show',$item->id) }}">View Detail</a></button>
-                <br>
+                <button class="cancel text-right mb-4"><a href="{{ route('show.review',$item->id) }}">View Detail</a></button>
+                <br><br>
                 @auth
                 <div class="text">
                     <span>Have you tried <b>A & K</b> yet? Add your review to help other find the perfect restaurent</span>

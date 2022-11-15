@@ -211,8 +211,7 @@ class ReviewController extends Controller
      */
     public function show($id)
     {
-        $restaurent = Restaurent::whereId($id)->with('services','foods','occasion','meals','general','comment')->first();
-        return view('frontend.pages.reviewDetail',compact('restaurent'));
+        //
     }
 
     /**

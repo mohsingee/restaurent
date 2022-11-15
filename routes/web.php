@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RestaurentController;
@@ -22,11 +23,18 @@ Route::get('/', [HomeController::class, 'index']);
 Auth::routes();
 
 Route::get('home', [HomeController::class, 'loggedHome'])->name('home');
-Route::get('admin-index', [AdminController::class, 'index'])->name('admin.index');
-Route::get('users-list', [AdminController::class, 'usersList'])->name('users.list');
+Route::get('show-review/{id}', [HomeController::class, 'showReview'])->name('show.review');
 
-Route::resource('restaurent',RestaurentController::class);
-Route::resource('review',ReviewController::class);
+Route::middleware('auth')->group(function() {
+    Route::group(['middleware' => ['role:Admin']], function () {
+        Route::get('admin-index', [AdminController::class, 'index'])->name('admin.index');
+        Route::get('users-list', [AdminController::class, 'usersList'])->name('users.list');
+        Route::resource('restaurent',RestaurentController::class);
+    });
 
-Route::get('my-reviews',[ReviewController::class,'myReviews'])->name('my_reviews');
-Route::get('add-review/{id}', [ReviewController::class, 'addReview'])->name('add.review');
+    Route::group(['middleware' => ['role:Reviewer']], function () {
+        Route::resource('review',ReviewController::class);
+        Route::get('my-reviews',[ReviewController::class,'myReviews'])->name('my_reviews');
+        Route::get('add-review/{id}', [ReviewController::class, 'addReview'])->name('add.review');
+    });
+});
