@@ -1,0 +1,2216 @@
+.checkbox-salutation {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.action_td {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+    padding: 8px !important;
+}
+.Bidlock-Faq-main label {
+    text-transform: capitalize;
+}
+
+.missing_ean tr td:last-child {
+    color: green !important;
+}
+.dashbaird_box_font {
+    word-break: initial;
+}
+.sidebar-link, a.sidebar-link {
+    font-size: 0.825rem;
+}
+.dashbaird_box_font {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.sidebar {
+    min-width: 318px;
+    max-width: 318px;
+}
+body:not([data-sidebar-position=right]) .sidebar.collapsed {
+    margin-left: -318px;
+}
+
+.element.style {
+    cursor: pointer;
+}
+.admin-banner-td-img {
+    width: 200px;
+    height: 50px;
+}
+.admin-banner-td-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Admin dashboard style start here  */
+/* Admin dashboard style start here  */
+/* Admin dashboard style start here  */
+table.dataTable th, table th {
+    white-space: nowrap;
+}
+.bg-secondary {
+padding: 6px;
+}
+.mm-pr-0 {
+padding-right: 0 !important;
+}
+div.dataTables_wrapper div.dataTables_info {
+padding-left: 6px;
+}
+.action_td a, .delete_btn {
+margin: 0px 2px;
+}
+.mm-web-seting-logo {
+display: flex;
+align-items: center;
+}
+.welcome-form-login {
+    max-width: 576px;
+    margin: 0 auto;
+}
+.admin-login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+.admin-login-main {
+    height: 100vh;
+}
+.admin-welcome {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-form-login {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.content.admin-welcome .h2 {
+    font-size: 36px;
+} 
+.card-actions .dropdown-menu.dropdown-menu-end {
+    inset: inherit !important;
+margin: 0px  !important;
+right: 0 !important;
+}
+.bg-secondary {
+    padding: 5px;
+}
+.content {
+    padding-top: 23px !important;
+}
+.New-cutom-button {
+    min-width: 254px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f47216;
+    margin-top: 10px;
+    filter: drop-shadow(0px 5px 2.5px rgba(0, 0, 0, 0.1));
+    text-transform: uppercase;
+    display: inline-block;
+    /* border: 2px solid #f47216; */
+    transition: all 0.3s;
+    text-align: center;
+}
+.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel {
+    background-color: #f47216 !important;
+}
+.New-cutom-button:hover{
+    background-color: #0f2af0;
+    color: #fff;
+}
+.top-list-p {
+    font-weight: 600;
+    font-size: 33px;
+}
+.latest-panding-text, .admin-db-text, .profile-text, .Update-Section, .faq-Section-hed,
+.admin-profile .card-title, .Update-Section-main .card-title, .bidlok-users, .section-main-heding, .section-sub-heding,
+.faq-Section-sub-hed, #staticBackdropLabel, #addFAQCategoryForm label, .admin-projectdetail-hed, #staticBackdropLabel  {
+    font-weight: 700;
+    color: #0f1319;
+    font-size: 24px;
+}
+#addFAQCategoryForm label {
+    font-weight: 400 !important;
+}
+.account-setting-main h1, .bidlok-users, .faq-cat-hed,
+.faq-Section-sub-hed, #addFAQCategoryForm label, .faq-cat-sub-hed {
+    font-weight: 700;
+    color: #0f1319;
+}
+#addFAQCategoryForm label {
+    color: #6c757d;
+
+}
+.admin-usres .card-title {
+    font-weight: 700;
+    color: #0f1319;
+    font-size: 24px;
+}
+.admin-profile .mmName {
+    font-size: 22px;
+}
+.section-sub-heding {
+    font-size: 20px;
+}
+.admin-add-cat-btn, .Update-Section-main .btn-success, 
+#addFAQCategoryForm .btn, .save-faqs-main .btn-success, 
+#updateBannerForm .btn, .pd-reject-btn, #addReason .btn, 
+#updateFaqCategoryForm .btn, .Bidlock-Faq-main .btn-success, 
+#addRow, .save-plan-main .btn-success, .account-setting-main .btn-success,
+#updateCategory .modal-footer .btn-secondary, #updateCategory .modal-footer .btn-success {
+    background-color: #f47216;
+    border-color: transparent;
+}
+.admin-add-cat-btn:hover,
+.Update-Section-main .btn-success:hover, 
+#addFAQCategoryForm .btn:hover, .save-faqs-main .btn-success:hover, 
+#updateBannerForm .btn:hover, .pd-reject-btn:hover, #addReason .btn:hover, 
+#updateFaqCategoryForm .btn:hover, .Bidlock-Faq-main .btn-success:hover, 
+#addRow:hover, .save-plan-main .btn-success:hover, .account-setting-main .btn-success:hover,
+#updateCategory .modal-footer .btn-secondary:hover, #updateCategory .modal-footer .btn-success:hover {
+    background-color: #0f2af0;
+}
+.sidebar-brand img {
+    margin-bottom: 30px;
+}
+.admin-pro-img {
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+}
+.admin-pro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn-check:focus+.btn-danger, .btn-danger:focus, .btn-danger:hover {
+    border-color: transparent;
+}
+#datatables-column-search-text-inputs.collapsed tbody td:first-child {
+    padding-left: 47px;
+}
+
+
+@media only screen and (min-width: 1601px) and (max-width: 8000px) {
+   .Update-Section-main input[type="file"] {
+        line-height: 70px;
+    }
+    .New-cutom-button {
+        height: 80px;
+        font-size: 24px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-transform: none;
+    }
+    .feather.feather-bell.text-warning {
+        width: 34px;
+        height: 34px;
+    }
+    .card-actions svg {
+        width: 49px;
+        height: 45px;
+    }
+    .admin-welcome {
+        max-width: 1200px;
+    }
+    .content.admin-welcome .h2 {
+        font-size: 40px;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .admin-welcome .h2 {
+        font-size: 60px;
+    }
+    .admin-welcome .lead {
+        font-size: 30px;
+    }
+    .admin-welcome img {
+        width: 300px;
+    }
+    .welcome-form-login {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .sidebar-link,
+    a.sidebar-link {
+        font-size: 25px;
+    }
+    .sidebar-dropdown a span {
+        font-size: 22px;
+    }
+    .sidebar-brand img {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .sidebar [data-bs-toggle=collapse]:before {
+        padding: 5px;
+    }
+    .sidebar  .feather {
+        width: 30px;
+        height: 28px;
+    }
+    .admin-db-text, .section-main-heding, .admin-projectdetail-hed, #staticBackdropLabel {
+        font-size: 40px;
+    }
+    #updateBanner .modal-dialog {
+        max-width: 634px;
+    }
+    .top-list-p {
+        font-size: 33px;
+    }
+    .dashbaird_box_font {
+        font-size: 24px;
+    }
+    .latest-panding-text, .section-sub-heding  {
+        font-size: 30px;
+    }
+    
+    table.dataTable td, table.dataTable th {
+        font-size: 22px;
+    }
+    table.dataTable th {
+        font-weight: 500;
+    }
+    table td, table th {
+        font-size: 22px;
+    }
+   table th {
+        font-weight: 500;
+    }
+    table.dataTable th {
+        white-space: nowrap;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        padding-top: 0;
+        font-size: 22px;
+        padding: 15px;
+    }
+    .page-item.disabled .page-link, .page-item .page-link {
+        font-size: 22px;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        padding-right: 15px;
+        padding-top: 5px;
+    }
+    .admin-copy-right, .admin-copy-right a {
+        font-size: 22px;
+    }
+    .nav-icon .feather-bell {
+       width: 48px;
+       height: 48px;
+    }
+    .nav-item #alertsDropdown .indicator {
+        height: 31px;
+        width: 31px;
+        font-size: 20px;
+        top: -8px;
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 22px;
+    }
+    .custom_navbar1 .dropdown-toggle:after {
+        padding: 6px;
+    }
+   .dropdown-menu-end .dropdown-item {
+        font-size: 22px;
+    }
+    .navbar-nav.navbar-align .text-dark {
+        font-size: 22px;
+    }
+    .dropdown-menu-header {
+        font-size: 26px;
+    }
+    .text-muted {
+        font-size: 22px;
+    }
+    .dropdown-menu-footer .text-muted {
+        font-weight: 600;
+    }
+    .navbar-nav.navbar-align .dropdown-menu-lg {
+        min-width: 24rem;
+    }
+    .bidlok-users {
+        font-size: 28px;
+    }
+    .admin-usres .card-title {
+        font-size: 20px;
+    }
+    .action_td a, .delete_btn {
+        font-size: 28px;
+        margin: 0px 3px;
+    }
+    .bg-secondary {
+        padding: 10px;
+        font-size: 20px;
+    }
+    #datatables-column-search-text-inputs tfoot input, 
+    div.dataTables_wrapper div.dataTables_filter input,
+    .Update-Section-main input.form-control,
+    #addFAQCategoryForm input, .save-faqs-main input, .save-faqs-main select,
+    #addReason input, #updateFaqCategoryForm input, .Bidlock-Faq-main input,
+    .Bidlock-Faq-main select, .save-plan-main input, .save-plan-main select,
+    .admin-welcome .form-control, #updateCategory input, #updateCategory select,
+    .account-setting-main input {
+        font-size: 22px;
+        height: 80px;
+    }
+    #updateBannerForm label, #addReason label, .updateFaqCategoryForm label {
+        font-size: 22px;
+    }
+    .Update-Section-main  label, .save-faqs-main label, .Bidlock-Faq-main label,
+    .save-plan-main label, .admin-welcome .form-label, .account-setting-main .form-label {
+        font-size: 22px;
+    }
+    .account-setting {
+        font-size: 30px;
+    }
+    .admin-welcome .form-check-label {
+        font-size: 22px;
+    }
+    .admin-welcome #customControlInline {
+        transform: scale(1.5);
+        margin-top: 12px;
+    }
+    .btn-outline-success {
+        font-size: 26px;
+    }
+    .admin-welcome .btn-primary {
+        width: 150px;
+        height: 63px;
+        font-size: 22px;
+    }
+    .Update-Section-main .btn-success,  #addFAQCategoryForm .btn,
+    .save-faqs-main .btn-success, #updateBannerForm .btn, .pd-reject-btn,
+    #addReason .btn, #updateFaqCategoryForm .btn, .Bidlock-Faq-main .btn-success,
+    #addRow, .save-plan-main .btn-success, .account-setting-main .btn-success {
+        height: 63px;
+        width: auto;
+        padding: 10px 20px;
+        font-size: 26px;
+    }
+    .account-setting-main .btn-success {
+        width: auto;
+    }
+    #updateCategory .modal-footer .btn-secondary, #updateCategory .modal-footer .btn-success {
+        height: 63px;
+        padding: 15px;
+        font-size: 22px;
+        line-height: 0px;
+    }
+    .alert-message {
+        font-size: 24px;
+    }
+    #updateBannerForm .btn, #updateFaqCategoryForm .btn {
+        width: auto;
+    }
+    .profile-text, .Update-Section, .faq-Section-hed, .faq-cat-hed {
+        font-size: 40px;
+        margin-bottom: 30px !important;
+    }
+    .account-setting-main h1, .bidlok-users {
+        font-size: 40px;
+    }
+    .faq-Section-sub-hed,  #addFAQCategoryForm label {
+        font-size: 30px;
+    }
+    #addFAQCategoryForm label {
+        font-size: 22px;
+        color: #6c757d;
+    }
+    .admin-add-cat-btn {
+        height: 61px;
+        font-size: 22px;
+        /* line-height: 60px; */
+        padding: 0px 20px;
+    }
+    #updateCategory label {
+        font-size: 22px;
+    }
+  
+    .admin-profile .card-title, .Update-Section-main .card-title,
+    .faq-Section-sub-hed, .faq-cat-sub-hed {
+        font-size: 30px;
+    }
+    .card-header .btn-primary {
+        padding: 15px;
+        font-size: 1.7em;
+    }
+    .modal-header .btn-close {
+        font-size: 25px;
+    margin-top: -43px;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable, .admin-profile .flex-grow-1,
+    .admin-profile .text-danger {
+        font-size: 22px;
+    }
+    .pro-address-list li svg {
+        width: 28px;
+        height: 24px;
+    }
+    div.dataTables_wrapper div.dataTables_length label, 
+    div.dataTables_wrapper div.dataTables_filter label {
+        font-size: 22px;
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        font-size: 22px;
+    }
+    .mm-web-seting-logo {
+        display: flex;
+        align-items: center;
+    }
+    .web-setting-textarea, .save-faqs-main textarea, .Bidlock-Faq-main textarea,
+    .save-plan-main textarea {
+        height: 120px;
+        font-size: 22px;
+    }
+   .save-plan-main .input-group .btn {
+        height: 100%;
+        font-size: 24px;
+    }
+    .admin-project-detail-main .text-danger {
+        font-size: 24px;
+    }
+    .admin-banner-td-img {
+        height: 90px;
+    }
+    .admin-project-detail-main .card-title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-project-detail-main .admin-pd-name {
+        font-size: 24px;
+    }
+    .admin-project-detail-main .flex-grow-1 {
+        font-size: 24px;
+    }
+    .form-control[type=file] {
+        line-height: 80px;
+        font-size: 22px;
+    }
+    .card-actions .dropdown-menu.dropdown-menu-end {
+        inset: inherit !important;
+    margin: 0px o !important;
+    right: 0 !important;
+    }
+    .stat {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 32px;
+    }
+    .stat svg {
+        width: 36px;
+        height: 32px;
+        color: #3f80ea!important;
+    }
+    #datatables-column-search-text-inputs .bg-info {
+        margin: 5px;
+    }
+    table.dataTable td .badge {
+        padding: 15px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+}
+/* 50 % screen media start  */
+/* 50 % screen media start  */
+
+@media only screen and (min-width: 2561px) and (max-width: 3840px) {
+    .admin-pro-img {
+        width: 150px;
+        height: 150px;
+    }
+    #updateCategory .modal-dialog, #updateBanner .modal-dialog {
+        max-width: 1140px;
+    }
+    .Update-Section-main .form-control[type=file]:not(:disabled):not([readonly]) {
+        line-height: 97px;
+    }
+   #updateBanner .modal-dialog {
+        max-width: 950px;
+    }
+    #updateCategoryForm, #updateBannerForm {
+        padding: 20px;
+    }
+    .modal-header .btn-close {
+        font-size: 40px;
+    }
+    .content.admin-welcome .h2 {
+        font-size: 5.5em;
+    }
+    .admin-welcome .lead {
+        font-size: 3em !important;
+    }
+    .admin-welcome img {
+        width: 400px;
+    }
+    .Update-Section-main label, 
+    .save-faqs-main label, .Bidlock-Faq-main label, .save-plan-main label, 
+    .admin-welcome .form-label, .account-setting-main .form-label {
+        font-size: 2em;
+    }
+    
+
+    .sidebar-link,
+    a.sidebar-link {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    .sidebar-dropdown a span {
+        font-size: 1em;
+    }
+    .sidebar-brand img {
+        width: 400px;
+        margin-bottom: 40px;
+    }
+    .sidebar [data-bs-toggle=collapse]:before {
+        padding: 5px;
+    }
+    .sidebar  .feather {
+        width: 60px;
+    height: 48px;
+    }
+    .sidebar .fa-question-circle {
+        font-size: 2em;
+    }
+    .admin-db-text, .section-main-heding, .admin-projectdetail-hed, #staticBackdropLabel {
+        font-size: 4em;
+    }
+    .top-list-p {
+        font-size: 3.4em
+    }
+    .dashbaird_box_font {
+        font-size: 2.4em;
+    font-weight: 700;
+    }
+    .latest-panding-text, .section-sub-heding  {
+        font-size: 3em;
+    }
+    
+    table.dataTable td, table.dataTable th {
+        font-size: 2em;
+    }
+    table.dataTable th {
+        font-weight: 500;
+    }
+    table td, table th {
+        font-size: 2em;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        padding-top: 0;
+        font-size: 2em;
+        padding: 15px;
+    }
+    .page-item.disabled .page-link, .page-item .page-link {
+        font-size: 2em;
+    }
+    .admin-copy-right, .admin-copy-right a {
+        font-size: 1em;
+    }
+    
+    .nav-item #alertsDropdown .indicator {
+        height: 48px;
+        width: 48px;
+        font-size: 1.2em;
+        top: -8px;
+    }
+    .nav-icon .feather-bell {
+        width: 82px;
+        height: 63px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2em;
+    }
+    .custom_navbar1 .dropdown-toggle:after {
+        padding: 10px;
+    }
+   .dropdown-menu-end .dropdown-item {
+        font-size: 2em;
+        padding: 3px 40px;
+    }
+    .navbar-nav.navbar-align .text-dark {
+        font-size: 1em;
+    }
+    .card-header .btn-primary {
+        font-size: 2em;
+        line-height: 51px;
+    }
+    #addCategory .modal-dialog {
+        max-width: 800px !important;
+    }
+    .dropdown-menu-header {
+        font-size: 2em;
+    }
+    .text-muted {
+        font-size: 2em;
+    }
+    .navbar-nav.navbar-align .dropdown-menu-lg {
+        min-width: 28rem;
+    }
+    .bidlok-users {
+        font-size: 3em;
+    }
+    .admin-usres .card-title {
+        font-size: 3em;
+    }
+    .action_td a, .delete_btn {
+        font-size: 1em;
+        margin: 0px 3px;
+        padding: 10px 20px;
+    }
+    .bg-secondary {
+        padding: 15px;
+        font-size: 1em;
+    }
+    #datatables-column-search-text-inputs tfoot input, 
+    div.dataTables_wrapper div.dataTables_filter input,
+    .Update-Section-main input.form-control,
+    #addFAQCategoryForm input, .save-faqs-main input, .save-faqs-main select,
+    #addReason input, #updateFaqCategoryForm input, .Bidlock-Faq-main input,
+    .Bidlock-Faq-main select, .save-plan-main input, .save-plan-main select,
+    .admin-welcome .form-control, #updateCategory input, #updateCategory select,
+    .account-setting-main input {
+        font-size: 2em;
+        height: 108px;
+    }
+    .swal2-input {
+        font-size: 2em !important;
+        height: 108px !important;
+    }
+    #datatables-column-search-text-inputs tfoot input {
+        font-size: 1em;
+    }
+    #updateBannerForm label, #addReason label, .updateFaqCategoryForm label {
+        font-size: 2em;
+    }
+    .Update-Section-main  label, .save-faqs-main label, .Bidlock-Faq-main label,
+    .save-plan-main label, .admin-welcome .form-label, .account-setting-main .form-label,
+    .invalid-feedback {
+        font-size: 2em;
+    }
+    .account-setting {
+        font-size: 3em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-welcome .form-check-label {
+        font-size: 2em;
+        padding-left: 24px;
+    }
+    .admin-welcome #customControlInline {
+        transform: scale(2.5);
+        margin-top: 16px;
+    }
+    .btn-outline-success {
+        font-size: 1.5em;
+    }
+    .admin-welcome .btn-primary {
+        width: 150px;
+        height: 63px;
+        font-size: 1.5em;
+    }
+    .Update-Section-main .btn-success,  #addFAQCategoryForm .btn,
+    .save-faqs-main .btn-success, #updateBannerForm .btn, .pd-reject-btn,
+    #addReason .btn, #updateFaqCategoryForm .btn, .Bidlock-Faq-main .btn-success,
+    #addRow, .save-plan-main .btn-success, .account-setting-main .btn-success {
+        height: 86px;
+        width: auto;
+        padding: 13px 30px;
+        font-size: 2em;    
+    }
+    .pd-reject-btn {
+        padding: 18px 30px;
+    }
+    .account-setting-main .btn-success {
+        width: auto;
+    }
+    #updateCategory .modal-footer .btn-secondary, #updateCategory .modal-footer .btn-success {
+        height: 85px;
+        padding: 15px;
+        font-size: 2em;
+        line-height: 0px;
+    }
+    .alert-message {
+        font-size: 2em;
+    }
+    #updateBannerForm .btn, #updateFaqCategoryForm .btn {
+        width: auto;
+    }
+    .profile-text, .Update-Section, .faq-Section-hed {
+        font-size: 4em;
+        margin-bottom: 30px !important;
+    }
+    .account-setting-main h1, .bidlok-users, .faq-cat-hed {
+        font-size: 4em;
+    }
+    .faq-Section-sub-hed, .faq-cat-sub-hed {
+        font-size: 3em;
+    }
+    #addFAQCategoryForm label {
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .admin-add-cat-btn {
+        height: 86px;
+        font-size: 2em;
+        line-height: 84px;
+        padding: 0px 30px;
+    }
+    #updateCategory label {
+        font-size: 2em;
+    }
+  
+    .admin-profile .card-title, .Update-Section-main .card-title {
+        font-size: 3em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable {
+        font-size: 2em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable, .admin-profile .flex-grow-1,
+    .admin-profile .text-danger {
+        font-size: 28px;
+    }
+    .pro-address-list li svg {
+        width: 28px;
+        height: 24px;
+    }
+    div.dataTables_wrapper div.dataTables_length label, 
+    div.dataTables_wrapper div.dataTables_filter label {
+        font-size: 2em;
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        font-size: 1em;
+    }
+    .mm-web-seting-logo {
+        display: flex;
+        align-items: center;
+    }
+    .web-setting-textarea, .save-faqs-main textarea, .Bidlock-Faq-main textarea,
+    .save-plan-main textarea {
+        height: 150px;
+        font-size: 2em;
+    }
+   .save-plan-main .input-group .btn {
+        height: 100%;
+        font-size: 2em;
+    padding: 20px 30px;
+    }
+    .admin-project-detail-main .text-danger {
+        font-size: 2em;
+    }
+    .admin-banner-td-img {
+        height: 90px;
+    }
+    .admin-project-detail-main .card-title {
+        font-size: 3em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-project-detail-main .admin-pd-name {
+        font-size: 2.3em;
+    }
+    #addReason .modal-dialog {
+        max-width: 1033px;
+    }
+    .admin-project-detail-main .flex-grow-1 {
+        font-size: 2em;
+    }
+    .form-control[type=file] {
+        line-height: 98px;
+        font-size: 2em;
+    }
+    .card-actions .dropdown-menu.dropdown-menu-end {
+        inset: inherit !important;
+        margin: 0px o !important;
+        right: 0 !important;
+    }
+    .stat {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 32px;
+    }
+    .stat svg {
+        width: 50px;
+        height: 50px;
+        color: #3f80ea!important;
+    }
+    #datatables-column-search-text-inputs .bg-info {
+        margin: 5px;
+    }
+    table.dataTable td .badge {
+        padding: 15px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .swal2-title {
+        font-size: 4em !important;
+    }
+    #swal2-content {
+        font-size: 2em !important;
+    }
+    .swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm {
+        font-size: 2em !important;
+    }
+    .swal2-popup {
+        width:57em !important;
+        padding: 32px !important;
+    }
+    .swal2-icon {
+        width: 8em !important;
+        height: 8em !important;
+    }
+
+} 
+
+
+@media only screen and (min-width: 3841px) and (max-width: 4096px) {
+    .admin-pro-img {
+        width: 160px;
+        height: 160px;
+    }
+    #updateCategory .modal-dialog, #updateBanner .modal-dialog {
+        max-width: 1140px;
+    }
+    .Update-Section-main .form-control[type=file]:not(:disabled):not([readonly]) {
+        line-height: 97px;
+    }
+   #updateBanner .modal-dialog {
+        max-width: 1035px;
+    }
+    #updateCategoryForm, #updateBannerForm {
+        padding: 20px;
+    }
+    .modal-header .btn-close {
+        font-size: 50px;
+    }
+    .content.admin-welcome .h2 {
+        font-size: 7.5em;
+    }
+    .admin-welcome .lead {
+        font-size: 4.565em !important;
+    }
+    .admin-welcome img {
+        width: 400px;
+    }
+    .Update-Section-main label, 
+    .save-faqs-main label, .Bidlock-Faq-main label, .save-plan-main label, 
+    .admin-welcome .form-label, .account-setting-main .form-label {
+        font-size: 2.5em;
+    }
+    
+
+    .sidebar-link,
+    a.sidebar-link {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+    .sidebar-dropdown a span {
+        font-size: 1.2em;
+    }
+    .sidebar-brand img {
+        width: 400px;
+        margin-bottom: 40px;
+    }
+    .sidebar [data-bs-toggle=collapse]:before {
+        padding: 5px;
+    }
+    .sidebar  .feather {
+        width: 60px;
+    height: 48px;
+    }
+    .sidebar .fa-question-circle {
+        font-size: 1.5em;
+    }
+    .admin-db-text, .section-main-heding, .admin-projectdetail-hed, #staticBackdropLabel {
+        font-size: 5.5em;
+    }
+    .top-list-p {
+        font-size: 4.5em;
+    }
+    .dashbaird_box_font {
+        font-size: 2.8em;
+        font-weight: 700;
+    }
+    .latest-panding-text, .section-sub-heding  {
+        font-size: 4.5em;
+    }
+    
+    table.dataTable td, table.dataTable th {
+        font-size: 2.5em;
+    }
+    table.dataTable th {
+        font-weight: 500;
+    }
+    table td, table th {
+        font-size: 2.5em;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        padding-top: 0;
+        font-size: 2.5em;
+        padding: 15px;
+    }
+    .page-item.disabled .page-link, .page-item .page-link {
+        font-size: 2.5em;
+        padding: 1.3rem 2.2rem;
+    }
+    .admin-copy-right, .admin-copy-right a {
+        font-size: 1em;
+       
+    }
+    
+    .nav-item #alertsDropdown .indicator {
+        height: 48px;
+        width: 48px;
+        font-size: 1.4em;
+        top: -8px;
+    }
+    .nav-icon .feather-bell {
+        width: 82px;
+        height: 63px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2.5em;
+    }
+    .custom_navbar1 .dropdown-toggle:after {
+        padding: 10px;
+    }
+   .dropdown-menu-end .dropdown-item {
+        font-size: 2.5em;
+        padding: 3px 40px;
+    }
+    .navbar-nav.navbar-align .text-dark {
+        font-size: 1.2em;
+    }
+    .card-header .btn-primary {
+        font-size: 2.5em;
+    }
+    .card-header .btn-pill.btn-primary.m-2 {
+        padding: 20px 30px;
+    }
+    #addCategory .modal-dialog {
+        max-width: 1021px !important;
+    }
+    .dropdown-menu-header {
+        font-size: 2.5em;
+    }
+    .text-muted {
+        font-size: 2.5em;
+    }
+    .navbar-nav.navbar-align .dropdown-menu-lg {
+        min-width: 28rem;
+    }
+    .bidlok-users {
+        font-size: 4.5em;
+    }
+    .admin-usres .card-title {
+        font-size: 4.5em;
+    }
+    .action_td a, .delete_btn {
+        font-size: 1em;
+        margin: 0px 3px;
+        padding: 10px 20px;
+    }
+    .bg-secondary {
+        padding: 15px;
+        font-size: 1em;
+    }
+    #datatables-column-search-text-inputs tfoot input, 
+    div.dataTables_wrapper div.dataTables_filter input,
+    .Update-Section-main input.form-control,
+    #addFAQCategoryForm input, .save-faqs-main input, .save-faqs-main select,
+    #addReason input, #updateFaqCategoryForm input, .Bidlock-Faq-main input,
+    .Bidlock-Faq-main select, .save-plan-main input, .save-plan-main select,
+    .admin-welcome .form-control, #updateCategory input, #updateCategory select,
+    .account-setting-main input {
+        font-size: 2.5em;
+        height: 108px;
+    }
+    .swal2-input {
+        font-size: 2.5em !important;
+        height: 108px !important;
+    }
+    #datatables-column-search-text-inputs tfoot input {
+        font-size: 1em;
+    }
+    #updateBannerForm label, #addReason label, .updateFaqCategoryForm label {
+        font-size: 2.5em;
+    }
+    .Update-Section-main  label, .save-faqs-main label, .Bidlock-Faq-main label,
+    .save-plan-main label, .admin-welcome .form-label, .account-setting-main .form-label,
+    .invalid-feedback {
+        font-size: 2.5em;
+    }
+    .account-setting {
+        font-size: 4.5em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-welcome .form-check-label {
+        font-size: 2.5em;
+        padding-left: 24px;
+    }
+    .admin-welcome #customControlInline {
+        transform: scale(2.5);
+        margin-top: 16px;
+    }
+    .btn-outline-success {
+        font-size: 1.8em;
+    }
+    .admin-welcome .btn-primary {
+        width: 150px;
+        height: 63px;
+        font-size: 1.8em;
+    }
+    .Update-Section-main .btn-success,  #addFAQCategoryForm .btn,
+    .save-faqs-main .btn-success, #updateBannerForm .btn, .pd-reject-btn,
+    #addReason .btn, #updateFaqCategoryForm .btn, .Bidlock-Faq-main .btn-success,
+    #addRow, .save-plan-main .btn-success, .account-setting-main .btn-success {
+        height: 86px;
+        width: auto;
+        padding: 13px 30px;
+        font-size: 2.5em;    
+    }
+    .pd-reject-btn {
+        padding: 18px 30px;
+    }
+    .account-setting-main .btn-success {
+        width: auto;
+    }
+    #updateCategory .modal-footer .btn-secondary, #updateCategory .modal-footer .btn-success {
+        height: 85px;
+        padding: 15px;
+        font-size: 2.5em;
+        line-height: 0px;
+    }
+    .alert-message {
+        font-size: 2.5em;
+    }
+    #updateBannerForm .btn, #updateFaqCategoryForm .btn {
+        width: auto;
+    }
+    .profile-text, .Update-Section, .faq-Section-hed {
+        font-size: 5.5em;
+        margin-bottom: 30px !important;
+    }
+    .account-setting-main h1, .bidlok-users, .faq-cat-hed {
+        font-size: 5.5em;
+    }
+    .faq-Section-sub-hed, .faq-cat-sub-hed {
+        font-size: 4.5em;
+    }
+    #addFAQCategoryForm label {
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+    .admin-add-cat-btn {
+        height: 86px;
+        font-size: 2.5em;
+        line-height: 47px;
+        padding: 0px 30px;
+    }
+    #updateCategory label {
+        font-size: 2.5em;
+    }
+  
+    .admin-profile .card-title, .Update-Section-main .card-title {
+        font-size: 4.5em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable {
+        font-size: 2.5em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable, .admin-profile .flex-grow-1,
+    .admin-profile .text-danger {
+        font-size: 36px;
+    }
+    .pro-address-list li svg {
+        width: 28px;
+        height: 24px;
+    }
+    div.dataTables_wrapper div.dataTables_length label, 
+    div.dataTables_wrapper div.dataTables_filter label {
+        font-size: 2.5em;
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        font-size: 1em;
+    }
+    .mm-web-seting-logo {
+        display: flex;
+        align-items: center;
+    }
+    .web-setting-textarea, .save-faqs-main textarea, .Bidlock-Faq-main textarea,
+    .save-plan-main textarea {
+        height: 150px;
+        font-size: 2.5em;
+    }
+   .save-plan-main .input-group .btn {
+        height: 100%;
+        font-size: 2.5em;
+    padding: 20px 30px;
+    }
+    .admin-project-detail-main .text-danger {
+        font-size: 2.5em;
+    }
+    .admin-banner-td-img {
+        height: 100px;
+    }
+    .admin-project-detail-main .card-title {
+        font-size: 4.5em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-project-detail-main .admin-pd-name {
+        font-size: 2.5em
+    }
+    #addReason .modal-dialog {
+        max-width: 1361px;
+    }
+    .admin-project-detail-main .flex-grow-1 {
+        font-size: 2.5em;
+    }
+    .form-control[type=file] {
+        line-height: 100px;
+        font-size: 2.5em;
+    }
+    .card-actions .dropdown-menu.dropdown-menu-end {
+        inset: inherit !important;
+        margin: 0px  !important;
+        right: 0 !important;
+    }
+    .stat {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 32px;
+    }
+    .stat svg {
+        width: 50px;
+        height: 50px;
+        color: #3f80ea!important;
+    }
+    #datatables-column-search-text-inputs .bg-info {
+        margin: 5px;
+    }
+    table.dataTable td .badge {
+        padding: 15px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .swal2-title {
+        font-size: 4.7em !important
+    }
+    #swal2-content {
+        font-size: 2.5em !important;
+    }
+    .swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm {
+        font-size: 2em !important;
+    }
+    .swal2-popup {
+        width:57em !important;
+        padding: 32px !important;
+    }
+    .swal2-icon {
+        width: 8em !important;
+        height: 8em !important;
+    }
+
+} 
+@media only screen and (min-width: 4097px) and (max-width: 5120px) {
+    .admin-pro-img {
+        width: 160px;
+        height: 160px;
+    }
+    #updateCategory .modal-dialog, #updateBanner .modal-dialog {
+        max-width: 1140px;
+    }
+    .Update-Section-main .form-control[type=file]:not(:disabled):not([readonly]) {
+        line-height: 97px;
+    }
+   #updateBanner .modal-dialog {
+        max-width: 1035px;
+    }
+    #updateCategoryForm, #updateBannerForm {
+        padding: 20px;
+    }
+    .modal-header .btn-close {
+        font-size: 50px;
+    }
+    .content.admin-welcome .h2 {
+        font-size: 7.5em;
+    }
+    .admin-welcome .lead {
+        font-size: 5em !important;
+    }
+    .admin-welcome img {
+        width: 400px;
+    }
+    .Update-Section-main label, 
+    .save-faqs-main label, .Bidlock-Faq-main label, .save-plan-main label, 
+    .admin-welcome .form-label, .account-setting-main .form-label {
+        font-size: 2.8em;
+    }
+    
+
+    .sidebar-link,
+    a.sidebar-link {
+        font-size: 2.8em;
+        margin-bottom: 40px;
+    }
+    .sidebar-dropdown a span {
+        font-size: 1.2em;
+    }
+    .sidebar-brand img {
+        width: 450px;
+        margin-bottom: 40px;
+    }
+    .sidebar [data-bs-toggle=collapse]:before {
+        padding: 5px;
+    }
+    .sidebar  .feather {
+        width: 60px;
+    height: 48px;
+    }
+    .sidebar .fa-question-circle {
+        font-size: 1.5em;
+    }
+    .admin-db-text, .section-main-heding, .admin-projectdetail-hed, #staticBackdropLabel {
+        font-size: 6.5em;
+    }
+    .top-list-p {
+        font-size: 5.5em;
+    }
+    .dashbaird_box_font {
+        font-size: 2.8em;
+        font-weight: 700;
+    }
+    .latest-panding-text, .section-sub-heding  {
+        font-size: 5.5em;
+    }
+    
+    table.dataTable td, table.dataTable th {
+        font-size: 2.8em;
+    }
+    table.dataTable th {
+        font-weight: 500;
+    }
+    table td, table th {
+        font-size: 2.8em;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        padding-top: 0;
+        font-size: 2.5em;
+        padding: 15px;
+    }
+    .page-item.disabled .page-link, .page-item .page-link {
+        font-size: 2.8em;
+        padding: 1.3rem 2.2rem;
+    }
+    .admin-copy-right, .admin-copy-right a {
+        font-size: 1.2em;
+       
+    }
+    
+    .nav-item #alertsDropdown .indicator {
+        height: 48px;
+        width: 48px;
+        font-size: 1.4em;
+        top: -8px;
+    }
+    .nav-icon .feather-bell {
+        width: 82px;
+        height: 63px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2.8em;
+    }
+    .custom_navbar1 .dropdown-toggle:after {
+        padding: 10px;
+    }
+   .dropdown-menu-end .dropdown-item {
+        font-size: 2.8em;
+        padding: 15px 60px;
+    }
+    .navbar-nav.navbar-align .text-dark {
+        font-size: 1.2em;
+    }
+    .card-header .btn-primary {
+        font-size: 2.5em;
+    }
+    .card-header .btn-pill.btn-primary.m-2 {
+        padding: 20px 30px;
+    }
+    #addCategory .modal-dialog {
+        max-width: 1021px !important;
+    }
+    .dropdown-menu-header {
+        font-size: 2.8em;
+    }
+    .text-muted {
+        font-size: 2.8em;
+    }
+    .navbar-nav.navbar-align .dropdown-menu-lg {
+        min-width: 28rem;
+    }
+    .bidlok-users {
+        font-size: 5.5em;
+    }
+    .admin-usres .card-title {
+        font-size: 5.5em;
+    }
+    .action_td a, .delete_btn {
+        font-size: 1em;
+        margin: 0px 3px;
+        padding: 13px 32px;
+    }
+    .bg-secondary {
+        padding: 15px;
+        font-size: 1em;
+    }
+    #datatables-column-search-text-inputs tfoot input, 
+    div.dataTables_wrapper div.dataTables_filter input,
+    .Update-Section-main input.form-control,
+    #addFAQCategoryForm input, .save-faqs-main input, .save-faqs-main select,
+    #addReason input, #updateFaqCategoryForm input, .Bidlock-Faq-main input,
+    .Bidlock-Faq-main select, .save-plan-main input, .save-plan-main select,
+    .admin-welcome .form-control, #updateCategory input, #updateCategory select,
+    .account-setting-main input {
+        font-size: 2.8em;
+        height: 108px;
+    }
+    .swal2-input {
+        font-size: 2.8em !important;
+        height: 108px !important;
+    }
+    #datatables-column-search-text-inputs tfoot input {
+        font-size: 1.2em;
+    }
+    #updateBannerForm label, #addReason label, .updateFaqCategoryForm label {
+        font-size: 2.8em;
+    }
+    .Update-Section-main  label, .save-faqs-main label, .Bidlock-Faq-main label,
+    .save-plan-main label, .admin-welcome .form-label, .account-setting-main .form-label,
+    .invalid-feedback {
+        font-size: 2.8em;
+    }
+    .account-setting {
+        font-size: 5.5em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-welcome .form-check-label {
+        font-size: 2.8em;
+        padding-left: 24px;
+    }
+    .admin-welcome #customControlInline {
+        transform: scale(3.5);
+        margin-top: 16px;
+    }
+    .New-cutom-button {
+        height: 120px;
+        font-size: 3em;
+       min-width: 287px;
+    }
+    .btn-outline-success {
+        font-size: 2em;
+    }
+    .admin-welcome .btn-primary {
+        width: 150px;
+        height: 63px;
+        font-size: 2em;
+    }
+    .Update-Section-main .btn-success,  #addFAQCategoryForm .btn,
+    .save-faqs-main .btn-success, #updateBannerForm .btn, .pd-reject-btn,
+    #addReason .btn, #updateFaqCategoryForm .btn, .Bidlock-Faq-main .btn-success,
+    #addRow, .save-plan-main .btn-success, .account-setting-main .btn-success {
+        height: 86px;
+        width: auto;
+        padding: 13px 30px;
+        font-size: 2.8em;    
+    }
+    .pd-reject-btn {
+        padding: 18px 30px;
+    }
+    .account-setting-main .btn-success {
+        width: auto;
+    }
+    #updateCategory .modal-footer .btn-secondary, #updateCategory .modal-footer .btn-success {
+        height: 85px;
+        padding: 15px;
+        font-size: 2.8em;
+        line-height: 0px;
+    }
+    .alert-message {
+        font-size: 2.8em;
+    }
+    #updateBannerForm .btn, #updateFaqCategoryForm .btn {
+        width: auto;
+    }
+    .profile-text, .Update-Section, .faq-Section-hed {
+        font-size: 6.5em;
+        margin-bottom: 30px !important;
+    }
+    .account-setting-main h1, .bidlok-users, .faq-cat-hed {
+        font-size: 6.5em;
+    }
+    .faq-Section-sub-hed, .faq-cat-sub-hed {
+        font-size: 5.5em;
+    }
+    #addFAQCategoryForm label {
+        font-size: 2.8em;
+        font-weight: 400;
+    }
+    .admin-add-cat-btn {
+        height: 86px;
+        font-size: 2.8em;
+        line-height: 47px;
+        padding: 0px 30px;
+    }
+    #updateCategory label {
+        font-size: 2.8em;
+    }
+  
+    .admin-profile .card-title, .Update-Section-main .card-title {
+        font-size: 5.5em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable {
+        font-size: 3em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable, .admin-profile .flex-grow-1,
+    .admin-profile .text-danger {
+        font-size: 40px;
+    }
+    .pro-address-list li svg {
+        width: 28px;
+        height: 24px;
+    }
+    div.dataTables_wrapper div.dataTables_length label, 
+    div.dataTables_wrapper div.dataTables_filter label {
+        font-size: 2.8em;
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        font-size: 1em;
+    }
+    .mm-web-seting-logo {
+        display: flex;
+        align-items: center;
+    }
+    .web-setting-textarea, .save-faqs-main textarea, .Bidlock-Faq-main textarea,
+    .save-plan-main textarea {
+        height: 150px;
+        font-size: 2.8em;
+    }
+   .save-plan-main .input-group .btn {
+        height: 100%;
+        font-size: 2.8em;
+    padding: 20px 30px;
+    }
+    .admin-project-detail-main .text-danger {
+        font-size: 2.8em;
+    }
+    .admin-banner-td-img {
+        height: 100px;
+    }
+    .admin-project-detail-main .card-title {
+        font-size: 4.5em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-project-detail-main .admin-pd-name {
+        font-size: 2.8em
+    }
+    #addReason .modal-dialog {
+        max-width: 1592px;
+    }
+    .admin-project-detail-main .flex-grow-1 {
+        font-size: 2.8em;
+    }
+    .form-control[type=file] {
+        line-height: 100px;
+        font-size: 2.8em;
+    }
+    .card-actions .dropdown-menu.dropdown-menu-end {
+        inset: inherit !important;
+        margin: 0px  !important;
+        right: 0 !important;
+    }
+    .stat {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 32px;
+    }
+    .stat svg {
+        width: 50px;
+        height: 50px;
+        color: #3f80ea!important;
+    }
+    #datatables-column-search-text-inputs .bg-info {
+        margin: 5px;
+    }
+    table.dataTable td .badge {
+        padding: 15px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .swal2-title {
+        font-size: 5.5em !important
+    }
+    #swal2-content {
+        font-size: 2.8em !important;
+    }
+    .swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm {
+        font-size: 2.5em !important;
+    }
+    .swal2-popup {
+        width:57em !important;
+        padding: 32px !important;
+    }
+    .swal2-icon {
+        width: 8em !important;
+        height: 8em !important;
+    }
+
+}
+
+@media only screen and (min-width: 5121px) and (max-width: 8000px) {
+    .admin-pro-img {
+        width: 160px;
+        height: 160px;
+    }
+    #updateCategory .modal-dialog, #updateBanner .modal-dialog {
+        max-width: 1140px;
+    }
+    .Update-Section-main .form-control[type=file]:not(:disabled):not([readonly]) {
+        line-height: 97px;
+    }
+   #updateBanner .modal-dialog {
+        max-width: 1035px;
+    }
+    #updateCategoryForm, #updateBannerForm {
+        padding: 20px;
+    }
+    .modal-header .btn-close {
+        font-size: 50px;
+    }
+    .content.admin-welcome .h2 {
+        font-size: 8.5em;
+    }
+    .admin-welcome .lead {
+        font-size: 5em !important;
+    }
+    .admin-welcome img {
+        width: 400px;
+    }
+    .Update-Section-main label, 
+    .save-faqs-main label, .Bidlock-Faq-main label, .save-plan-main label, 
+    .admin-welcome .form-label, .account-setting-main .form-label {
+        font-size: 2.8em;
+    }
+    
+
+    .sidebar-link,
+    a.sidebar-link {
+        font-size: 2.8em;
+        margin-bottom: 40px;
+    }
+    .sidebar-dropdown a span {
+        font-size: 1.2em;
+    }
+    .sidebar-brand img {
+        width: 450px;
+        margin-bottom: 40px;
+    }
+    .sidebar [data-bs-toggle=collapse]:before {
+        padding: 5px;
+    }
+    .sidebar  .feather {
+        width: 60px;
+    height: 48px;
+    }
+    .sidebar .fa-question-circle {
+        font-size: 1.5em;
+    }
+    .admin-db-text, .section-main-heding, .admin-projectdetail-hed, #staticBackdropLabel {
+        font-size: 6.5em;
+    }
+    .top-list-p {
+        font-size: 5.5em;
+    }
+    .dashbaird_box_font {
+        font-size: 2.8em;
+        font-weight: 700;
+    }
+    .latest-panding-text, .section-sub-heding  {
+        font-size: 5.5em;
+    }
+    
+    table.dataTable td, table.dataTable th {
+        font-size: 2.8em;
+    }
+    table.dataTable th {
+        font-weight: 500;
+    }
+    table td, table th {
+        font-size: 2.8em;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        padding-top: 0;
+        font-size: 2.5em;
+        padding: 15px;
+    }
+    .page-item.disabled .page-link, .page-item .page-link {
+        font-size: 2.8em;
+        padding: 1.3rem 2.2rem;
+    }
+    .admin-copy-right, .admin-copy-right a {
+        font-size: 1.2em;
+       
+    }
+    
+    .nav-item #alertsDropdown .indicator {
+        height: 48px;
+        width: 48px;
+        font-size: 1.4em;
+        top: -8px;
+    }
+    .nav-icon .feather-bell {
+        width: 82px;
+        height: 63px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2.8em;
+    }
+    .custom_navbar1 .dropdown-toggle:after {
+        padding: 10px;
+    }
+   .dropdown-menu-end .dropdown-item {
+        font-size: 2.8em;
+        padding: 15px 60px;
+    }
+    .navbar-nav.navbar-align .text-dark {
+        font-size: 1.2em;
+    }
+    .card-header .btn-primary {
+        font-size: 2.5em;
+    }
+    .card-header .btn-pill.btn-primary.m-2 {
+        padding: 20px 30px;
+    }
+    #addCategory .modal-dialog {
+        max-width: 1021px !important;
+    }
+    .dropdown-menu-header {
+        font-size: 2.8em;
+    }
+    .text-muted {
+        font-size: 2.8em;
+    }
+    .navbar-nav.navbar-align .dropdown-menu-lg {
+        min-width: 28rem;
+    }
+    .bidlok-users {
+        font-size: 5.5em;
+    }
+    .admin-usres .card-title {
+        font-size: 5.5em;
+    }
+    .action_td a, .delete_btn {
+        font-size: 1em;
+        margin: 0px 3px;
+        padding: 13px 32px;
+    }
+    .bg-secondary {
+        padding: 15px;
+        font-size: 1em;
+    }
+    #datatables-column-search-text-inputs tfoot input, 
+    div.dataTables_wrapper div.dataTables_filter input,
+    .Update-Section-main input.form-control,
+    #addFAQCategoryForm input, .save-faqs-main input, .save-faqs-main select,
+    #addReason input, #updateFaqCategoryForm input, .Bidlock-Faq-main input,
+    .Bidlock-Faq-main select, .save-plan-main input, .save-plan-main select,
+    .admin-welcome .form-control, #updateCategory input, #updateCategory select,
+    .account-setting-main input {
+        font-size: 2.8em;
+        height: 108px;
+    }
+    .swal2-input {
+        font-size: 2.8em !important;
+        height: 108px !important;
+    }
+    #datatables-column-search-text-inputs tfoot input {
+        font-size: 1.2em;
+    }
+    #updateBannerForm label, #addReason label, .updateFaqCategoryForm label {
+        font-size: 2.8em;
+    }
+    .Update-Section-main  label, .save-faqs-main label, .Bidlock-Faq-main label,
+    .save-plan-main label, .admin-welcome .form-label, .account-setting-main .form-label,
+    .invalid-feedback {
+        font-size: 2.8em;
+    }
+    .account-setting {
+        font-size: 5.5em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-welcome .form-check-label {
+        font-size: 2.8em;
+        padding-left: 24px;
+    }
+    .admin-welcome #customControlInline {
+        transform: scale(2.5);
+        margin-top: 16px;
+    }
+    .btn-outline-success {
+        font-size: 2em;
+    }
+    .admin-welcome .btn-primary {
+        width: 150px;
+        height: 63px;
+        font-size: 2em;
+    }
+    .Update-Section-main .btn-success,  #addFAQCategoryForm .btn,
+    .save-faqs-main .btn-success, #updateBannerForm .btn, .pd-reject-btn,
+    #addReason .btn, #updateFaqCategoryForm .btn, .Bidlock-Faq-main .btn-success,
+    #addRow, .save-plan-main .btn-success, .account-setting-main .btn-success {
+        height: 86px;
+        width: auto;
+        padding: 13px 30px;
+        font-size: 2.8em;    
+    }
+    .pd-reject-btn {
+        padding: 18px 30px;
+    }
+    .account-setting-main .btn-success {
+        width: auto;
+    }
+    #updateCategory .modal-footer .btn-secondary, #updateCategory .modal-footer .btn-success {
+        height: 85px;
+        padding: 15px;
+        font-size: 2.8em;
+        line-height: 0px;
+    }
+    .alert-message {
+        font-size: 2.8em;
+    }
+    #updateBannerForm .btn, #updateFaqCategoryForm .btn {
+        width: auto;
+    }
+    .profile-text, .Update-Section, .faq-Section-hed {
+        font-size: 6.5em;
+        margin-bottom: 30px !important;
+    }
+    .account-setting-main h1, .bidlok-users, .faq-cat-hed {
+        font-size: 6.5em;
+    }
+    .faq-Section-sub-hed, .faq-cat-sub-hed {
+        font-size: 5.5em;
+    }
+    #addFAQCategoryForm label {
+        font-size: 2.8em;
+        font-weight: 400;
+    }
+    .admin-add-cat-btn {
+        height: 86px;
+        font-size: 2.8em;
+        line-height: 47px;
+        padding: 0px 30px;
+    }
+    #updateCategory label {
+        font-size: 2.8em;
+    }
+  
+    .admin-profile .card-title, .Update-Section-main .card-title {
+        font-size: 5.5em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable {
+        font-size: 3em;
+    }
+    .admin-pro-emeil, .pro-address-list li,
+    .note-editor.note-airframe .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-editing-area .note-editable, .admin-profile .flex-grow-1,
+    .admin-profile .text-danger {
+        font-size: 40px;
+    }
+    .pro-address-list li svg {
+        width: 28px;
+        height: 24px;
+    }
+    div.dataTables_wrapper div.dataTables_length label, 
+    div.dataTables_wrapper div.dataTables_filter label {
+        font-size: 2.8em;
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        font-size: 1em;
+    }
+    .mm-web-seting-logo {
+        display: flex;
+        align-items: center;
+    }
+    .web-setting-textarea, .save-faqs-main textarea, .Bidlock-Faq-main textarea,
+    .save-plan-main textarea {
+        height: 150px;
+        font-size: 2.8em;
+    }
+   .save-plan-main .input-group .btn {
+        height: 100%;
+        font-size: 2.8em;
+    padding: 20px 30px;
+    }
+    .admin-project-detail-main .text-danger {
+        font-size: 2.8em;
+    }
+    .admin-banner-td-img {
+        height: 100px;
+    }
+    .admin-project-detail-main .card-title {
+        font-size: 4.5em;
+        font-weight: 700;
+        color: #000;
+    }
+    .admin-project-detail-main .admin-pd-name {
+        font-size: 2.8em
+    }
+    #addReason .modal-dialog {
+        max-width: 1361px;
+    }
+    .admin-project-detail-main .flex-grow-1 {
+        font-size: 2.8em;
+    }
+    .form-control[type=file] {
+        line-height: 100px;
+        font-size: 2.8em;
+    }
+    .card-actions .dropdown-menu.dropdown-menu-end {
+        inset: inherit !important;
+        margin: 0px  !important;
+        right: 0 !important;
+    }
+    .stat {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 32px;
+    }
+    .stat svg {
+        width: 50px;
+        height: 50px;
+        color: #3f80ea!important;
+    }
+    #datatables-column-search-text-inputs .bg-info {
+        margin: 5px;
+    }
+    table.dataTable td .badge {
+        padding: 15px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .swal2-title {
+        font-size: 5.5em !important
+    }
+    #swal2-content {
+        font-size: 2.8em !important;
+    }
+    .swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm {
+        font-size: 2.5em !important;
+    }
+    .swal2-popup {
+        width:57em !important;
+        padding: 32px !important;
+    }
+    .swal2-icon {
+        width: 8em !important;
+        height: 8em !important;
+    }
+
+}
+/******************* end media 8000  */
+/* end media 8000  */
+/* end media 8000  */
+@media only screen and (min-width: 1601px) and (max-width: 2192px) {
+    .dashbaird_box_font {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1600px) {
+    .New-cutom-button {
+        height: 50px;
+        font-size: 18px;
+        min-width: 170px;
+    }
+   
+}
+@media (max-width:1600px){
+    .bg-secondary {
+        margin: 0px;
+    }
+}
+@media only screen and (min-width: 1900px) {
+    .sidebar {
+        min-width: 478px;
+        max-width: 378px;
+    }
+    body:not([data-sidebar-position=right]) .sidebar.collapsed {
+        margin-left: -478px;
+    }
+}
+
+@media only screen and (min-width: 2561px) and (max-width: 8000px) {
+    .sidebar {
+        min-width: 664px;
+        max-width: 664px;
+    }
+    body:not([data-sidebar-position=right]) .sidebar.collapsed {
+        margin-left: -664px;
+    }
+
+}
+@media only screen and (min-width: 4097px) and (max-width: 8000px) {
+    .sidebar {
+        min-width: 983px;
+        max-width: 983px;
+    }
+    body:not([data-sidebar-position=right]) .sidebar.collapsed {
+        margin-left: -983px;
+    }
+}
+
+
+@media screen and (max-width:1199px) {
+    .New-cutom-button {
+        height: 45px;
+        font-size: 16px;
+        min-width: 150px;
+    }
+    
+}
+@media (min-width: 1px) and (max-width: 991.98px) {
+    body:not([data-sidebar-position=right]) .sidebar {
+        margin-left: -318px;
+    }
+    body:not([data-sidebar-position=right]) .sidebar.collapsed {
+        margin-left: 0;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    .New-cutom-button {
+        height: 50px;
+        font-size: 16px;
+        min-width: 119px;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    .sidebar {
+        min-width: 276px;
+        max-width: 276px;
+    }
+    body:not([data-sidebar-position=right]) .sidebar {
+        margin-left: -276px;
+    }
+    .New-cutom-button {
+        height: 48px;
+        font-size: 16px;
+        min-width: 118px;
+    }
+    .sidebar-brand img {
+        width: 180px;
+    }
+    .content.admin-welcome .h2 {
+        font-size: 28px;
+    }
+    .mm-wrap {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .mm-web-seting-logo img {
+        width: 200px;
+    }
+    .mm-web-seting-logo {
+        justify-content: center;
+        padding: 5px 0px;
+    }
+    .dataTables_length {
+        margin-bottom: 10px;
+    }
+    .card-header {
+        padding-bottom: 0px;
+    }
+    .action_td a, .delete_btn {
+        margin: 5px 3px 0;
+    }
+    .action_td {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* Admin dashboard style end  here  */
+/* Admin dashboard style end  here  */
+/* Admin dashboard style end  here  */
+
+@media (min-width:1199px) and (max-width:1380px) {
+    .overflow_scroll2 table {
+        word-break: break-all;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width:1090px) and (max-width:1199px) {
+    .dashbaird_box_font {
+        font-size: 0.9rem !important;
+    }
+
+    .first_box_padding1 {
+        padding: 10px !important;
+        padding-top: 20px !important;
+    }
+
+    .align-self-end {
+        align-self: inherit !important;
+    }
+
+    .illustration-img {
+
+        margin-top: 22px !important;
+    }
+
+    .overflow_scroll2 {
+        overflow-x: scroll;
+    }
+
+    .overflow_scroll2 table {
+        word-break: break-all;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width:992px) and (max-width:1089px) {
+
+    .stat {
+        background: #e0eafc;
+        border-radius: 50%;
+        padding: 0.75rem;
+        width: 40px;
+        height: 40px;
+        padding-top: 7px;
+    }
+
+    .stat svg {
+        width: 18px;
+        height: 18px;
+        color: #3f80ea !important;
+    }
+
+    .first_box_padding1 {
+        padding: 10px !important;
+        padding-top: 20px !important;
+    }
+
+    .align-self-end {
+        align-self: inherit !important;
+    }
+
+    .illustration-img {
+
+        margin-top: 22px !important;
+    }
+
+    .overflow_scroll2 table {
+        word-break: break-all;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .overflow_scroll2 table {
+        word-break: break-all;
+        white-space: nowrap;
+    }
+}
+
+#datatables-column-search-text-inputs {
+    width: 100% !important;
+}
+
+
+@media screen and (max-width:575px) {
+    .dashbaird_box_font {
+        font-size: 16px;
+    }
+    .top-list-p {
+        font-size: 18px;
+    }
+    
+}
+
+@media(max-width:400px){
+
+    #staticBackdropLabel {
+        font-weight: 700;
+        color: #0f1319;
+        font-size: 17px;
+    }
+}
