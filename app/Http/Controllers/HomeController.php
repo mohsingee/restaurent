@@ -231,7 +231,12 @@ class HomeController extends Controller
         $searcRestaurents = [];
         if($request->has('q')){
             $search = $request->q;
-            $searcRestaurents = Restaurent::where('location', 'LIKE', "%$search%")->get();
+            $searcRestaurents = Restaurent::where(function ($q) use ($search){
+                $q->where('location','LIKE',"%$search%")
+                    ->orWhere(function($queryone) use ($search){
+                        $queryone->where('name','LIKE',"%$search%");
+                    });
+                })->get();
         }
         return response()->json($searcRestaurents);
     }

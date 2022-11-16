@@ -86,7 +86,7 @@
 <script src="{{ asset('js/autosearch.js') }}"></script>
 <script>
 $('.livesearch.proSearch').select2({
-	placeholder: 'Find a restaurent by location...',
+	placeholder: 'Find a restaurent by location or name...',
 	theme: 'classic',
 	ajax: {
 		url: '/search-restaurents',
@@ -96,7 +96,7 @@ $('.livesearch.proSearch').select2({
 			return {
 				results: $.map(data, function (item) {
 					return {
-						text: item.location,
+						text: item.name,
 						id: item.id
 					}
 				})
