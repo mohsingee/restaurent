@@ -138,7 +138,7 @@ span{
                 </div>
             </section>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-2">
             <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Advance Search
               </button>
