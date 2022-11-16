@@ -78,6 +78,47 @@ span{
             padding-top: 20%;
             filter: blur(1px);
         }
+/* search bar code */
+.select2-selection__arrow{
+    display: none
+}
+
+.input-group .btn {
+    /* position: relative; */
+    /* z-index: 2; */
+    position: ABSOLUTE;
+    RIGHT: 0;
+    TOP: 0;
+    background: #000;
+    padding: 0px;
+    width: 40px;
+    color: #fff;
+    height: 100%;
+    border-radius: 2px;
+    z-index: 1;
+}
+.select2-container--classic .select2-selection--single{
+
+    height: 38px;
+}
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 38px;
+}
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa;
+    outline: 0;
+    position: absolute;
+    top: -37px;
+    width: 88%;
+    padding-top: 8px;
+}
+.select2-container--classic .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #fff;
+    color: #000;
+}
+/* End search bar code */
 </style>
 <div id="overlay" style="display: none">
     <img src="{{asset('img/loader1.gif')}}" alt="Loading" /><br/>

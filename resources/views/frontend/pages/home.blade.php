@@ -77,6 +77,8 @@ span{
     padding-top: 20%;
     filter: blur(1px);
 }
+
+/* search bar code */
 .select2-selection__arrow{
     display: none
 }
@@ -93,7 +95,7 @@ span{
     color: #fff;
     height: 100%;
     border-radius: 2px;
-    z-index: 9999;
+    z-index: 1;
 }
 .select2-container--classic .select2-selection--single{
 
@@ -116,6 +118,7 @@ span{
     background-color: #fff;
     color: #000;
 }
+/* End search bar code */
 </style>
 <div id="overlay" style="display: none">
     <img src="{{asset('img/loader1.gif')}}" alt="Loading" /><br/>
