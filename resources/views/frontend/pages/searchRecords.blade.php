@@ -1,5 +1,4 @@
 @extends('frontend.layouts.app')
-
 @section('content')
 <style>
     body{
@@ -65,19 +64,19 @@ span{
     color: #FFF;
 }
 #overlay {
-            background:rgba(0,0,0,0.8);
-            color: #fff;
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            z-index: 5000;
-            top: 0;
-            left: 0;
-            float: left;
-            text-align: center;
-            padding-top: 20%;
-            filter: blur(1px);
-        }
+    background:rgba(0,0,0,0.8);
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 20%;
+    filter: blur(1px);
+}
 /* search bar code */
 .select2-selection__arrow{
     display: none
