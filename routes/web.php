@@ -24,6 +24,9 @@ Auth::routes();
 
 Route::get('home', [HomeController::class, 'loggedHome'])->name('home');
 Route::get('show-review/{id}', [HomeController::class, 'showReview'])->name('show.review');
+Route::post('advance-search', [HomeController::class, 'advanceSearch'])->name('advance.search');
+Route::get('search-restaurents', [HomeController::class, 'searchRestaurents'])->name('search.restaurents');
+Route::post('get-restaurents', [HomeController::class, 'getRestaurents']);
 
 Route::middleware('auth')->group(function() {
     Route::group(['middleware' => ['role:Admin']], function () {

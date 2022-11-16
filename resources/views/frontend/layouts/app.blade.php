@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -80,4 +83,58 @@
         </main>
     </div>
 </body>
+<script src="{{ asset('js/autosearch.js') }}"></script>
+<script>
+$('.livesearch.proSearch').select2({
+	placeholder: 'Find a restaurent by location...',
+	theme: 'classic',
+	ajax: {
+		url: '/search-restaurents',
+		dataType: 'json',
+		delay: 250,
+		processResults: function (data) {
+			return {
+				results: $.map(data, function (item) {
+					return {
+						text: item.location,
+						id: item.id
+					}
+				})
+			};
+		},
+		cache: true
+	}
+});
+$('.livesearch.proSearch').on('change', function() {
+    let search = $('#search').val();
+    if (!search) {
+        return false;
+    }
+    $.ajaxSetup({
+    headers: {
+            "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+        },
+    });
+    $.ajax({
+        type: "post",
+        url: "get-restaurents",
+        dataType: "json",
+        cache: false,
+        data: {
+            id: search,
+        },
+        beforeSend: function () {
+            $('#overlay').show();
+        },
+        success: function (response) {
+            $("#ajaxRestaurents").html(response.data);
+            $("#ajaxSearchmsg").text(response.msg);
+            $('.ajax-loader').css("visibility", "hidden");
+        },
+        complete:function(){
+            $('#overlay').hide();
+        }
+    });
+});   
+</script>
 </html>

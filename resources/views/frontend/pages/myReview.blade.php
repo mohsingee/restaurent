@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('frontend.layouts.app')
 
 @section('content')
 <style>
@@ -114,7 +114,14 @@ span{
                 <hr>
                 <div class="">
                     <div class="rat-content">
-                        <button class="cancel text-right"><a href="{{ route('review.edit',$item->id) }}">edit</a></button>
+                        <form action="{{ route('review.destroy',$item->id) }}" method="post">
+                            <button class="cancel text-right" type="submit">Delete</button>
+                            @method('delete')
+                            @csrf
+                        </form>
+                        <form action="{{ route('review.edit',$item->id) }}" method="get">
+                            <button class="cancel text-right" type="submit">Edit</button>
+                        </form>
                         <div class="rating-card">
                             <div class="card-title"><b>{{ Auth::user()->first_name.' '.Auth::user()->last_name}}</b></div>
                         </div>

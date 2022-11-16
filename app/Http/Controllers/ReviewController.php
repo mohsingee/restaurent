@@ -53,6 +53,7 @@ class ReviewController extends Controller
                 Services_review::create([
                     'user_id' => Auth::user()->id,
                     'service_id' => $ser->id,
+                    'restaurent_id' => $request->restaurent_id,
                     'review' => $_POST['ser'.$ser->id],
                 ]);
                 $count = Services_review::where('service_id',$ser->id)->avg('review');
@@ -67,6 +68,7 @@ class ReviewController extends Controller
                 Foods_review::create([
                     'user_id' => Auth::user()->id,
                     'food_id' => $food->id,
+                    'restaurent_id' => $request->restaurent_id,
                     'review' => $_POST['food'.$food->id],
                 ]);
                 $count = Foods_review::where('food_id',$food->id)->avg('review');
@@ -81,6 +83,7 @@ class ReviewController extends Controller
                 Occassion_review::create([
                     'user_id' => Auth::user()->id,
                     'occasion_id' => $occ->id,
+                    'restaurent_id' => $request->restaurent_id,
                     'review' => $_POST['occasion'.$occ->id],
                 ]);
                 $count = Occassion_review::where('occasion_id',$occ->id)->avg('review');
@@ -95,6 +98,7 @@ class ReviewController extends Controller
                 Meals_review::create([
                     'user_id' => Auth::user()->id,
                     'meals_id' => $meal->id,
+                    'restaurent_id' => $request->restaurent_id,
                     'review' => $_POST['meal'.$meal->id],
                 ]);
                 $count = Meals_review::where('meals_id',$meal->id)->avg('review');
@@ -107,6 +111,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->expenseRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -117,6 +122,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->foodRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -127,6 +133,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->ambianceRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -137,6 +144,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->serviceRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -147,6 +155,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->cleanlinessRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -157,6 +166,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->speedRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -167,6 +177,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->valueRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -177,6 +188,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->allergyRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -187,6 +199,7 @@ class ReviewController extends Controller
             GeneralReview::create([
                 'user_id' => Auth::user()->id,
                 'general_restaurent_id' => $get->id,
+                'restaurent_id' => $request->restaurent_id,
                 'review' => $request->overallRating,
             ]);
             $count = GeneralReview::where('general_restaurent_id',$get->id)->avg('review');
@@ -249,7 +262,45 @@ class ReviewController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user_id = Auth::user()->id;
+        $res = GeneralComment::whereId($id)->first();
+        $general = General_restaurent_experiance::where('restaurent_id',$res->restaurent_id)->get();
+        
+        foreach($general as $gen){
+            GeneralReview::where(['user_id'=>$user_id,'general_restaurent_id'=>$gen->id])->delete();
+            $count = GeneralReview::where('general_restaurent_id',$gen->id)->avg('review');
+
+            General_restaurent_experiance::where('id',$gen->id)->update(['review_count'=>round($count)]);
+        }
+        $meals = Type_meal::where(['restaurent_id'=>$res->id])->get();
+        foreach($meals as $meal){
+            Meals_review::where(['user_id'=>$user_id,'meals_id'=>$meal->id])->delete();
+            $count = Meals_review::where('meals_id',$meal->id)->avg('review');
+            Type_meal::where('id',$meal->id)->update(['review_count'=>round($count)]);
+        }
+
+        $occasions = Type_occasion::where(['restaurent_id'=>$res->id])->get();
+        foreach($occasions as $occasoin){
+            Occassion_review::where(['user_id'=>$user_id,'occasion_id'=>$occasoin->id])->delete();
+            $count = Occassion_review::where('occasion_id',$occasoin->id)->avg('review');
+            Type_occasion::where('id',$occasoin->id)->update(['review_count'=>round($count)]);
+        }
+
+        $foods = Type_food::where(['restaurent_id'=>$res->id])->get();
+        foreach($foods as $food){
+            Foods_review::where(['user_id'=>$user_id,'food_id'=>$food->id])->delete();
+            $count = Foods_review::where('food_id',$food->id)->avg('review');
+            Type_food::where('id',$food->id)->update(['review_count'=>round($count)]);
+        }
+
+        $services = Type_service::where(['restaurent_id'=>$res->id])->get();
+        foreach($services as $ser){
+            Services_review::where(['user_id'=>$user_id,'service_id'=>$ser->id])->delete();
+            $count = Services_review::where('service_id',$ser->id)->avg('review');
+            Type_service::where('id',$ser->id)->update(['review_count'=>round($count)]);
+        }
+        GeneralComment::destroy($id);
+        return redirect('home')->with('success','Review has been deleted successfully.');
     }
 
     public function addReview($id){
