@@ -183,10 +183,25 @@ label {
 	font-size: 55px !important;
 }
 
+
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 </style>
 <div class="container">
 	<div class="row justify-content-center">
+		<div class="message alert_margin">
+			@if (session()->has('success'))
+				<div class="alert alert-success alert-dismissible fade show" role="alert">
+					{{ session()->get('success') }}
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+			@endif
+			@if (session()->has('error'))
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+					{{ session()->get('error') }}
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+			@endif
+		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="rating-header">
 				<div class="resut-rating">
@@ -325,13 +340,34 @@ label {
 			<div class="">
                 @forelse($restaurent->comment as $item)
 				<div class="rat-content">
-					<div class="rating-card">
+					<div class="rating-card mb-0">
 						<div class="card-title">{{ userInfo($item->user_id)->first_name.' '.userInfo($item->user_id)->last_name}}</div>
 					</div>
 					<div class="content-info">
 						<div class="rating">
 							{{ $item->comment }}
 						</div>
+					</div>
+					<div>
+						<i class="fa fa-comment" aria-hidden="true" style="font-size:18px;"></i> ({{ count($item->review_comment) }})
+					</div>
+					<div>
+						<hr>
+						@auth
+							<form action="{{ route('add_review.comment') }}" method="post">
+							@csrf
+								<div class="input-group mb-2">
+									<input type="hidden" name="general_comment_id" value="{{ $item->id }}">
+									<input type="text" class="form-control rounded" name="comment" placeholder="type something..."/>
+									<button type="submit" class="btn btn-outline-primary">Submit</button>
+								</div>
+							</form>
+						@endauth
+						@foreach($item->review_comment as $comment)
+						<div style="margin-left:6px;">
+							<p ><b>{{ userInfo($comment->user_id)->first_name }}: </b>{{ $comment->comment }}</p>
+						</div>
+						@endforeach
 					</div>
 				</div>
                 @empty

@@ -39,5 +39,6 @@ Route::middleware('auth')->group(function() {
         Route::resource('review',ReviewController::class);
         Route::get('my-reviews',[ReviewController::class,'myReviews'])->name('my_reviews');
         Route::get('add-review/{id}', [ReviewController::class, 'addReview'])->name('add.review');
+        Route::post('add-review-comment', [ReviewController::class, 'addReviewComment'])->name('add_review.comment');
     });
 });

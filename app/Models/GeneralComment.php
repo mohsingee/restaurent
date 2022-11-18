@@ -14,4 +14,9 @@ class GeneralComment extends Model
     public function restaurent(){
         return $this->belongsTo(Restaurent::class,'restaurent_id','id');
     }
+
+    public function review_comment()
+    {
+        return $this->hasMany(ReviewComment::class,'general_comment_id','id');
+    }
 }

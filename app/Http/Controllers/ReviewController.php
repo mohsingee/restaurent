@@ -15,6 +15,7 @@ use App\Models\Occassion_review;
 use App\Models\Meals_review;
 use App\Models\GeneralReview;
 use App\Models\GeneralComment;
+use App\Models\ReviewComment;
 use App\Models\General_restaurent_experiance;
 class ReviewController extends Controller
 {
@@ -311,5 +312,14 @@ class ReviewController extends Controller
     public function myReviews(){
         $data = GeneralComment::where('user_id',Auth::user()->id)->with('restaurent')->get();
         return view('frontend.pages.myReview',compact('data'));
+    }
+
+    public function addReviewComment(Request $request){
+        ReviewComment::create([
+            'user_id' => Auth::user()->id,
+            'general_comment_id' => $request->general_comment_id,
+            'comment' => $request->comment,
+        ]);
+        return redirect()->back()->with('success','Your comment has been added');
     }
 }
