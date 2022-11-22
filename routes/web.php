@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function() {
     Route::group(['middleware' => ['role:Admin']], function () {
         Route::get('admin-index', [AdminController::class, 'index'])->name('admin.index');
         Route::get('users-list', [AdminController::class, 'usersList'])->name('users.list');
+        Route::delete('user-delete/{id}', [AdminController::class, 'userDelete'])->name('users.destroy');
         Route::resource('restaurent',RestaurentController::class);
     });
 

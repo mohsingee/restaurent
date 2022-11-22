@@ -19,4 +19,9 @@ class AdminController extends Controller
         $users = User::where('role','!=',0)->get();
         return view('admin.pages.users',compact('users'));
     }
+
+    public function userDelete($id){
+        User::destroy($id);
+        return redirect()->back()->with('success','User successfully deleted.');
+    }
 }

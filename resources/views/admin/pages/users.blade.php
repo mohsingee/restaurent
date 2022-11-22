@@ -29,7 +29,13 @@
                            <td>{{ $user->first_name.' '.$user->last_name }}</td>
                            <td>{{ $user->email }}</td>
                            <td>{{ date('m-d-Y', strtotime($user->created_at))}}</td>
-                           <td><span class='badge bg-secondary bg-success'>Active</span> <span class='badge bg-secondary bg-danger'>Inactive</span></td>
+                           <td>
+                              <form action="{{ route('users.destroy',$user->id) }}" method="post">
+                                 <input class="btn btn-sm btn-danger" type="submit" value="Delete" />
+                                 @method('delete')
+                                 @csrf
+                             </form>
+                           </td>
                         </tr>
                         @endforeach
                      </tbody>
