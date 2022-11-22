@@ -125,6 +125,7 @@ span{
  </div>
 <div class="container">
     <div class="row justify-content-center">
+        @if(count($data)>0)
         <div class="col-md-4">
             <section class="search_div mm_top_serach">
                 <div class="top_bottom_search">
@@ -188,6 +189,15 @@ span{
               </div>
             </div>
         </div>
+        @else
+        <div class="box-part">
+            <div class="content-info">
+                <div class="content-details">
+                    No restaurents founds.
+                </div>
+            </div>
+        </div>
+        @endif
         <div id="ajaxSearchmsg"></div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="ajaxRestaurents">
             <div class="message alert_margin">
